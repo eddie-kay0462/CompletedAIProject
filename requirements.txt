@@ -1,4 +1,8 @@
-streamlit==1.10.0
-pandas==1.4.2
+streamlit
+tensorflow==2.10.0
 plotly==5.9.0
-scipy==1.8.1
+scipy==1.9.3  # Adjust this version if necessary
+joblib
+pandas
+numpy
+sklearn
