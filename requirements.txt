@@ -1,8 +1,1 @@
 streamlit==1.37.0
-tensorflow==2.17.0
-plotl
-scipy
-joblib
-pandas
-numpy
-scikit-learn==1.3.2
