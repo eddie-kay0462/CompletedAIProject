@@ -9,9 +9,9 @@ import joblib
 # Load model and tokenizer
 def load_model_and_tokenizer():
     try:
-        with open("C:\\Users\\Edward Ofosu Mensah\\OneDrive - Ashesi University\\Desktop\\CompleteAIFinal\\CompletedAIProject\\rfbest.pkl", 'rb') as model_file:
+        with open("rfbest.pkl", 'rb') as model_file:
             model = joblib.load(model_file)
-        with open("C:\\Users\\Edward Ofosu Mensah\\OneDrive - Ashesi University\\Desktop\\CompleteAIFinal\\CompletedAIProject\\tokenizer_.pkl", 'rb') as tokenizer_file:
+        with open("tokenizer_.pkl", 'rb') as tokenizer_file:
             tokenizer = pickle.load(tokenizer_file)
         return model, tokenizer
     except Exception as e:
@@ -48,7 +48,7 @@ if nav_option == "Home":
 @st.cache_data
 def load_data():
     try:
-        return pd.read_csv("C:\\Users\\Edward Ofosu Mensah\\OneDrive - Ashesi University\\Desktop\\CompleteAIFinal\\CompletedAIProject\\reviews_extended.csv")
+        return pd.read_csv("reviews_extended.csv")
     except Exception as e:
         st.error(f"Error loading reviews data: {e}")
         return pd.DataFrame(columns=["User", "Review", "Rating"])
@@ -110,7 +110,7 @@ if nav_option == "Explore Our Courses":
                         })
 
                         reviews_data = pd.concat([reviews_data, new_review], ignore_index=True)
-                        reviews_data.to_csv("C:\\Users\\Edward Ofosu Mensah\\OneDrive - Ashesi University\\Desktop\\CompleteAIFinal\\CompletedAIProject\\reviews_extended.csv", index=False)
+                        reviews_data.to_csv("reviews_extended.csv", index=False)
 
                         st.write("Review submitted successfully!")
                     except NotFittedError as e:
