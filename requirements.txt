@@ -1,7 +1,7 @@
 streamlit
-tensorflow==2.10.0
-plotly==5.9.0
-scipy==1.9.3  # Adjust this version if necessary
+tensorflow
+plotl
+scipy
 joblib
 pandas
 numpy
