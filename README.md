@@ -16,7 +16,7 @@
 
 **### Running the Application Locally ###**
 
-1)Since our models are large, github doesn't allow us to upload it here (capped at 25mb). However you can download our machine learning model and tokenizer files on your local machine. These are the links 
+1)Since our models are large, github doesn't allow us to upload it here (capped at 25mb). However you can still download our machine learning model and tokenizer files on your local machine. These are the links 
 - https://drive.google.com/file/d/1WfJUxKYks1JacDYASnMGf_P6uxKE9qG7/view?usp=sharing
 - https://drive.google.com/file/d/11hoXdZTUqQmrdnMD9nCcHswNRQcVLPS8/view?usp=sharing
 
